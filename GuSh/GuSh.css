@@ -1,0 +1,404 @@
+*{
+    margin:0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F6F5F1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.home-Page{
+    width: 90%;
+    height: 100%;
+    margin: 15px auto;
+}
+.nav-Bar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto 30px;
+    border-radius: 5px;
+    box-shadow: grey 1px 1px 15px .5px;
+}
+.nav-Link, .logo{
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    height: 100%;
+}
+.logoImg{
+    width: 150px;
+    margin-left: 15px;
+}
+.Menu{
+    width: fit-content;
+    margin: 15px;
+}
+.line{
+    background-color: black;
+    width: 35px;
+    height: 5px;
+    margin: 5px;
+    border-radius: 50px;
+    visibility: visible;
+}
+#nav-Menu{
+    margin-right: 15px;
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #303f9f;
+    opacity: .8;
+    visibility: hidden;
+}
+.showNavBar{
+    margin-right: 15px;
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #303f9f;
+    opacity: .8;
+    visibility: hidden;
+}
+.nav-elem{
+    padding: 15px;
+    width: 100%;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-elem a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+}
+.nav-elem:hover, .nav-elem a:hover{
+    color: #303f9f;
+    transform: scale(1.05);
+    transition: .2s linear;
+}
+.imgDescription{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+}
+.img-Slider{
+    margin: 30px auto;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+}
+.img-Slider{
+    width: 100%;
+    height: 100%;
+}
+.img-Slider img{
+    width: 100%;
+    height: 100%;
+}
+.para p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+.p-Btn{
+    width: 100px;
+    height: 30px; 
+    background-color: #303f9f;
+    color: white; 
+    font-size: 15px;
+    outline: none;
+    border: none; 
+    border-radius: 3px; 
+    cursor: pointer;
+}
+.para{
+    width: 90%;
+    height: fit-content;
+    margin: 30px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.para h3{
+    color: #303f9f;
+}
+.signIn-Out{
+    display: none;
+}
+.userDataEntry{
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #303f9f;
+    border: none;
+    color: white;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+.signUp-btn{
+    color: #303f9f;
+    background-color: transparent;
+}
+.boxes{
+    margin: 30px auto;
+    width: 90%;
+    padding: 10px;
+    height: fit-content;
+    border-radius: 5px;
+    box-shadow: grey 2px 2px 50px .1px;
+    position: relative;
+}
+.boxes img{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 100%;
+    height: 50%;
+}
+.boxes p{
+    height: 150px;
+    font-size: 14px;
+    letter-spacing: .8px;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+.boxes-Btn-Div{
+    width: fit-content;
+    margin: 10px auto;
+
+}
+.boxes-Btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: #303f9f;
+    border: none;
+    color: white;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Services, .Courses{
+    width: 75%;
+    height: fit-content;
+    margin: 30px auto;
+    background: transparent;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #303f9f;
+}
+.para-nav-Link{
+    width: 100%;
+}
+.para-nav-Link p{
+    font-size: 14px;
+    letter-spacing: .8px;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+.para-nav-Link h2{
+    color: #303f9f;
+    letter-spacing: .8px;
+    line-height: 28px;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 15px;
+}
+.img-nav-Link img{
+    width: 100%;
+}
+.user-Form{
+    border-top: 1px solid #303f9f;
+    width: 75%;
+    height: fit-content;
+    margin: 15px auto;
+    padding: 30px 25px;
+}
+.user-Form h2{
+    color: #303f9f;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.inputFieldDiv{
+    height: fit-content;
+    margin: 10px auto;
+    margin-bottom: 30px;
+}
+.inputField, .inputField input, textarea{
+    width: 100%;
+    height: 40px;
+    margin: auto;
+}
+.inputField input, textarea{
+    font-size: 14px;
+    letter-spacing: .7px;
+    color: black;
+    padding: 10px;
+    border: hidden;
+    border-bottom: 2px solid #303f9f;
+    outline: none;
+    background-color: transparent;
+}
+.nameField, .emailField, .msgField{
+    margin: 20px auto;
+}
+.footer{
+    width: 100%;
+    height: 10vh;
+    background-color: #303f9f;
+    color: white;
+    font-size: 18px;
+    position: relative;
+}
+.footerContent{
+    width: fit-content;
+    height: fit-content;
+    font-size: 14px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media only screen and (min-width: 990px){
+    .logo{
+        width: fit-content;
+        height: 100%;
+    }
+    .nav-Link{
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Menu{
+        display: none;
+    }
+    #nav-Menu{
+        background-color: transparent;
+    }
+    .signIn-Out{
+        margin: 10px auto;
+        width: 200px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #nav-Menu{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    .line{
+        display: none;
+    }
+    .nav-elem{
+        visibility: visible;
+        margin: 0;
+    }
+    .description-Boxes{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .boxes p{
+        height: 200px;
+    }
+    .boxes{
+        width: 30%;
+        height: fit-content;
+    }
+    .img-Slider{
+        margin-bottom: 10px;
+        width: 70%;
+        height: 100%;
+        float: right;
+        position: relative;
+        top: -30px;
+    }
+    .img-Slider img{
+        width: 100%;
+        height: auto;
+    }
+    .para{
+        padding: 10px;
+        margin: 3vw;
+        text-align: left;
+        width: 400px;
+        height: fit-content;
+        background: transparent;
+        position: absolute;
+        bottom: 25%;
+        left: 0;
+    } 
+    .imgDescription{
+        position: relative;
+        width: 100%;
+        height: 75vh;
+        margin: auto;
+    }
+    .Services, .Courses, .About, .Contact{
+        flex-direction: row;
+        width: 85%;
+        height: fit-content;
+        justify-content: space-between;
+    }
+    .Courses, .About{
+        flex-direction: row-reverse;
+    }
+    .img-nav-Link{
+        width: 50%;
+    }
+    .para-nav-Link{
+        width: 35%;
+    }
+    .img-nav-Link img{
+        width: 100%;
+    }   
+    .user-Form{
+        width: 40%;
+        border: none;
+    }
+    .footerContent{
+        font-size: 16px;
+    }
+}

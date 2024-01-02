@@ -1,0 +1,116 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+}
+.containerDiv{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.formParentDiv{
+    width: 350px;
+    height: fit-content;
+    box-shadow: grey 1px 1px 50px 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+}
+.image{
+    width: 100%;
+    height: 130px;
+    /* background-color: rgb(66, 135, 245); */
+    background-color: #303f9f;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.imgDiv{
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form{
+    padding: 0 25px;
+    margin: 0;
+}
+.inputField{
+    margin: 20px auto;
+    width: 100%;
+}
+.inputField input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    letter-spacing: .7px;
+    border-radius: 3px;
+}
+.text input{
+    border: none;
+    background: transparent;
+    border-bottom: 1.5px solid grey;
+}
+.button input{
+    height: 45px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    /* border: 2px solid rgb(66, 135, 245); */
+    border: 2px solid #303f9f;
+    color: #303f9f;
+    /* color: rgb(66, 135, 245); */
+    font-size: 18px;
+    font-weight: 500;
+}
+.button input:hover{
+    transform: scale(1.01);
+    transition: .1s linear;
+}
+.forgotPassword a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #303f9f;
+    /* color: rgb(66, 135, 245); */
+}
+.userChoice{
+    display: flex;
+    margin-bottom: 20px;
+}
+.signUpLink, .forgotPassword, .rememberMe{
+    width: fit-content;
+    height: 20px;
+    margin: auto;
+    padding: 0;
+}
+.signUpLink{
+    margin-bottom: 10px;
+}
+.rememberMe{
+    margin-left: 5px;
+}
+.forgotPassword, .rememberMe{
+    margin: 0 auto;
+}
+.signUpLink a, .rememberMe a{
+    margin: auto;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    /* color: rgb(66, 135, 245);    */
+    color: #303f9f; 
+}
+@media only screen and (max-width: 425px) {
+    .formParentDiv{
+        width: 90%;
+    }
+}
